@@ -24,7 +24,7 @@ export default function Home() {
           <h1>Nunca foi tão facil gerenciar seus Serviços.</h1>
           <h6>
             Nossa solução te oferece um sistema de controle para suas
-            diligencias e para os escritorios um controle geral desde os
+            diligências e para os escritórios um controle geral desde os
             processos até os correspondentes
           </h6>
 
@@ -56,15 +56,15 @@ export default function Home() {
         <p>
           Com nosso sistema, você terá todas as suas diligências gerenciadas em
           um só lugar, oferecendo praticidade e eficiência. Tenha o controle
-          completo dos pagamentos, acompanhando quem já pagou e identificando os
-          pagamentos em atraso. Além disso, tenha acesso fácil às audiências do
+          completo dos pagamentos, acompanhando quem já pagou e identificar
+          aqueles que estão em atraso. Além disso, tenha acesso fácil às audiências do
           dia, com cada registro sendo automaticamente adicionado à sua agenda
           digital.
           <br />
           <br />
           Nossa sistema oferece diversas outras funcionalidades valiosas, como
           alertas antecipados para suas audiências, possibilitando que você se
-          prepare adequadamente. Além disso, você pode armazenar processos e
+          prepare adequadamente. E tem mais, você pode armazenar processos e
           petições diretamente no arquivo do sistema, facilitando o acesso a
           todas as informações relacionadas, sem a necessidade de alternar entre
           diferentes aplicativos.
@@ -73,14 +73,14 @@ export default function Home() {
       <section className={styles.boxCards}>
         <h3 className={styles.titleBoxCard}>Nossa solução te entrega:</h3>
         <Card img="icon-clock.svg" title="Integração Com Google Agenda">
-          sincronizar automaticamente suas diligências com a sua agenda pessoal
+          Sincronize automaticamente suas diligências com a sua agenda pessoal.
         </Card>
         <Card img="icon-dashboard.svg" title="Controle de diligências">
-          Centralize todas informações relevantes das diligências em um só lugar
+          Centralize todas informações relevantes das diligências em um só lugar.
         </Card>
 
         <Card img="icon-grafico.svg" title="Relatórios e Análises">
-          recursos avançados de geração de relatórios, análises e dados
+          Recursos avançados de geração de relatórios, análises e dados.
           financeiros
         </Card>
       </section>

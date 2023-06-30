@@ -13,7 +13,8 @@
 
   position: absolute;
   z-index: -0;
-  top: 509px
+  top: 509px;
+  Width: 100%;
 }
 
 .header {
@@ -58,7 +59,7 @@
   flex-shrink: 0;
   align-items: center;
   gap: 40px;
-  margin-bottom: 60px; 
+  margin-bottom: 60px;
   z-index: 1;
 }
 
@@ -83,17 +84,26 @@
 }
 
 .boxDescription h6 {
+  color: #8B8C8F;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: -1px;
+
+
+
+
   display: flex;
   max-width: 633px;
   flex-direction: column;
   flex-shrink: 0;
-  color: #8B8C8F;
+
   text-align: center;
-  font-size: 18px;
+
   font-family: var(--inter);
   font-style: normal;
-  font-weight: 400;
-  line-height: 32px;
+
+
   letter-spacing: -1px;
 }
 
@@ -104,7 +114,7 @@
   align-items: flex-start;
   gap: 27px;
   width: 80%;
-  text-align: justify; 
+  text-align: justify;
   padding: 0.4rem 0 4rem 0;
 }
 
@@ -117,20 +127,21 @@
   color: var(--dark-primary, #005CE5);
   font-size: 34px;
 
-  
+
   font-weight: 600;
   line-height: 140%;
   text-transform: capitalize;
 }
-.comofunciona p { 
+
+.comofunciona p {
   color: #8B8C8F;
 
-font-size: 18px;
+  font-size: 18px;
 
 
-font-weight: 500;
-line-height: 30px;
-letter-spacing: -1px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: -1px;
 }
 
 .boxCards {
@@ -186,17 +197,6 @@ letter-spacing: -1px;
   border-radius: var(--border-radius);
 }
 
-.code {
-  font-weight: 700;
-  font-family: var(--font-mono);
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  width: var(--max-width);
-  max-width: 100%;
-}
 
 .callToAction {
   display: flex;
@@ -228,19 +228,27 @@ letter-spacing: -1px;
 }
 
 .callToAction h6 {
-  color: #223140;
-  text-align: center;
+
+
+
+  color: #8B8C8F;
   font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: -1px;
+
+  text-align: center;
+
 
   font-style: normal;
-  font-weight: 400;
-  line-height: 32px;
-  letter-spacing: -1px;
+
+
+
 }
 
 .folder {
   display: flex;
-  width: 1400px;
+  width: 100%;
   height: 322px;
   padding: 0px 150px;
   flex-direction: column;
@@ -437,11 +445,15 @@ letter-spacing: -1px;
 
   .folder {
     width: 100%
+    
   }
 
   .folder p {
     width: 100%;
     min-width: 240px;
+  } 
+  .socilmedia{ 
+    padding-top: 2rem;
   }
 }
 
