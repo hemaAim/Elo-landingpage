@@ -1,79 +1,133 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Card from "@/Components/Card"; 
-import ButtonCtAwrapper from "@/Components/ButtonCtAwrapper" 
-
+import Card from "@/Components/Card";
+import ButtonCtAwrapper from "@/Components/ButtonCtAwrapper";
 
 export default function Home() {
   return (
-    <main className={styles.main}> 
-    <div className={styles.navbar}>
-      <Image  
-      
-       src="/heroa.svg"
-       alt="Next.js Logo"
-       width={48}
-       height={48}
-       priority
-      /> 
-           <ButtonCtAwrapper title="saber mais"/> 
-    </div>
+    <main className={styles.main}>
+      <header className={styles.header}>
+        <nav className={styles.navbar}>
+          <Image
+            src="/logo.svg"
+            alt="Next.js Logo"
+            width={48}
+            height={48}
+            priority
+          />
+          <ButtonCtAwrapper title="Começar" />
+        </nav>
+      </header>
+
       <section className={styles.heroAndDescription}>
         <div className={styles.boxDescription}>
-          <h1>Os correspondentes ideais para os seus serviços</h1>
+          <h1>Nunca foi tão facil gerenciar seus Serviços.</h1>
           <h6>
-            Não deixe que os processos de seleção de correspondentes ocupe todo
-            seu tempo, deixe que entregamos ele para você
+            Nossa solução te oferece um sistema de controle para suas
+            diligencias e para os escritorios um controle geral desde os
+            processos até os correspondentes
           </h6>
+
+        
+          <ButtonCtAwrapper title="Começar" />
+         
         </div>
-        <Image className={styles.image}
-          src="/hero.svg"
+        <Image
+          className={styles.bg}
+          src="background.svg"
           alt="Next.js Logo"
-          width={484}
-          height={487}
+          width={2225}
+          height={755}
+          priority
+        />
+        <Image
+          className={styles.image}
+          src="/hero-homepage.svg"
+          alt="Next.js Logo"
+          width={1011}
+          height={755}
           priority
         />
       </section>
+
+      <section className={styles.comofunciona}>
+        <h1>Como funciona?</h1>
+
+        <p>
+          Com nosso sistema, você terá todas as suas diligências gerenciadas em
+          um só lugar, oferecendo praticidade e eficiência. Tenha o controle
+          completo dos pagamentos, acompanhando quem já pagou e identificando os
+          pagamentos em atraso. Além disso, tenha acesso fácil às audiências do
+          dia, com cada registro sendo automaticamente adicionado à sua agenda
+          digital.
+          <br />
+          <br />
+          Nossa sistema oferece diversas outras funcionalidades valiosas, como
+          alertas antecipados para suas audiências, possibilitando que você se
+          prepare adequadamente. Além disso, você pode armazenar processos e
+          petições diretamente no arquivo do sistema, facilitando o acesso a
+          todas as informações relacionadas, sem a necessidade de alternar entre
+          diferentes aplicativos.
+        </p>
+      </section>
       <section className={styles.boxCards}>
-        <Card img="/cardOne.png" title="Integração Com Google Agenda">
-          A integração com o Google Agenda é um recurso fundamental de nossa
-          solução. Com isso, você poderá sincronizar automaticamente suas
-          diligências com a sua agenda pessoal.
+        <h3 className={styles.titleBoxCard}>Nossa solução te entrega:</h3>
+        <Card img="icon-clock.svg" title="Integração Com Google Agenda">
+          sincronizar automaticamente suas diligências com a sua agenda pessoal
         </Card>
-        <Card img="/chart.png" title="Controle de diligências">
-          Você terá todas as informações relevantes das diligências
-          centralizadas em um só lugar. Isso inclui dados do cliente, partes
-          envolvidas, prazos, tarefas a serem cumpridas e documentos
-          relacionados.
+        <Card img="icon-dashboard.svg" title="Controle de diligências">
+          Centralize todas informações relevantes das diligências em um só lugar
         </Card>
 
-        <Card img="/Cashmoney.png" title="Relatórios e Análises">
-          Tome decisões estratégicas embasadas em dados reais. Nosso sistema
-          oferece recursos avançados de geração de relatórios e análises, Nosso
-          sistema enviará lembretes e notificações
+        <Card img="icon-grafico.svg" title="Relatórios e Análises">
+          recursos avançados de geração de relatórios, análises e dados
+          financeiros
         </Card>
       </section>
 
       <section className={styles.callToAction}>
         <h3>
-        Vamos repensar a forma de organizar suas diligências?
-        </h3> 
+          Vamos simplificar as coisas para você conquistar autonomia e atrair
+          mais clientes?
+        </h3>
         <h6>
-        Não perca a opotunidade de ter um controle completo para suas diligencias. 
-        </h6> 
-        <ButtonCtAwrapper  title="saber mais"/> 
-     
-        
-      </section> 
-      <section className={styles.folder}>  
-      <Image
+          Não deixe escapar a chance de conquistar um controle completo para
+          suas diligências e potencializar sua carreira jurídica!
+        </h6>
+        <ButtonCtAwrapper title="Começar" />
+      </section>
+      <section className={styles.folder}>
+        <Image
           src="/Component.svg"
           alt="Next.js Logo"
           width={44}
           height={24}
           priority
-        /> 
-        <p>Transformando empresas através da união e tecnologia, a plataforma Elo impulsiona o mundo jurídico para o futuro.</p>
+        />
+        <p>
+          Transformando empresas através da união e tecnologia, a plataforma Elo
+          impulsiona o mundo jurídico para o futuro.
+        </p>
+        <div className={styles.socilmedia}>
+          <a href="https://www.instagram.com/elo.jur/?hl=pt">
+            <Image
+              src="insta.svg"
+              alt="Next.js Logo"
+              width={44}
+              height={24}
+              priority
+            />
+          </a>
+          <a href="https://api.whatsapp.com/send/?text=Gostaria+de+saber+sobre+o+sistema&type=custom_url&app_absent=0">
+            <Image
+              src="whatsapp.svg"
+              alt="Next.js Logo"
+              width={44}
+              height={24}
+              priority
+            />
+          </a>
+        </div>
       </section>
     </main>
   );

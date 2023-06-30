@@ -13,11 +13,13 @@ const Card = ({ title, children, img }: CardProps) => (
 src={img}
 alt="" 
 /> 
-
+<div className={styles.titleAndDescription}> 
 <h4>
 {title}
 </h4> 
 <p>{children}</p>
+</div>
+
 </div> 
  
 )

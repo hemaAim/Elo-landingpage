@@ -1,43 +1,74 @@
-
 .cards {
-  display: flex;
-  width:auto;
-  
-  height: 489px;
-  padding: 0px 10px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 23px; 
+  border-radius: 24px;
+  background: var(--background-white, #FFF);
+  box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.08);
+  width: 588px;
+  height: 130px;
 
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
 
 }
 
-.cards h4 {
-  color: #183B56;
-  text-align: center;
-  font-size: 19px;
-  
+.titleAndDescription {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+
+}
+
+.titleAndDescription h4 {
+  color: var(--text-bright-grey, #183B56);
+
+  /* Heading/H5-24px-SemiBold */
+  font-size: 19.981px;
+
   font-style: normal;
   font-weight: 700;
   line-height: 35.681px;
   letter-spacing: 0.143px;
+  text-transform: capitalize;
 
 }
 
-.cards p {
-  color: #5A7184;
-  text-align: center;
-  font-size: 13px;
-  padding: auto;
+.titleAndDescription p {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: #8B8C8F;
+  font-size: 18px;
+
   font-style: normal;
   font-weight: 400;
-  line-height: 29.972px;
+  line-height: 135%;
+
 }
 
 
-@media only screen and (max-width: 750px) { 
-.cards {
-  min-width: 290px;
-  height: auto;
-}}
+@media only screen and (max-width: 750px) {
+  .cards {
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    min-width: 280px;
+    height: auto;
+    padding: 20px;
+  }
+
+  .titleAndDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    width: auto;
+  
+  }  
+  .titleAndDescription p { 
+    font-size: 13px;
+  }
+  
+}
