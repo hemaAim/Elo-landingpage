@@ -15,7 +15,7 @@ export type ButtonProps = {
 
 
 function ButtonCtAwrapper({title}: ButtonProps) {
-  const [smShow, setSmShow] = useState(false);
+ 
   const [lgShow, setLgShow] = useState(false);
 
   return (
